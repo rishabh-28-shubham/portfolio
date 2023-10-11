@@ -9,21 +9,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Container(
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage(
-                "assets/temp_background.jpg",
-              ),
-              fit: BoxFit.cover
-            )
- // trying to implement gradient 
-            // gradient: LinearGradient(
-            //   begin: Alignment.bottomRight,
-            //   end: Alignment.topLeft,
-            //   colors: [Color(0xFF09203f), Color(0xFF537895)],
-            ),
-          ),
-        ),
+          child: Text("content ke kami"),
+        )
+      ),
     );
   }
 }
