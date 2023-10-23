@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/Screens/home_view.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Container(
-          child: Text("content ke kami"),
-        )
+      theme: ThemeData(
+        
       ),
+      home:Home_View(),
+
     );
   }
 }
