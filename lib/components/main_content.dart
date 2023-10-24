@@ -10,36 +10,39 @@ class setup_maincontent extends StatefulWidget {
 class _setup_maincontentState extends State<setup_maincontent> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 1440,
-      child: Row(
-        children: [
-          Column(
-            children: [
-              Container(
-                child: Text('hello'),
-              )
-            ],
-          ),
-          const SizedBox(width: 10,),
-          Column(
-            children: [
-              Container(
-                child: Text('hello'),
-              )
-            ],
-          ),
-          const SizedBox(
-            width: 10,
-          ),
-          Column(
-            children: [
-              Container(
-                child: Text('hello'),
-              )
-            ],
-          )
-        ],
+    return Padding(
+      padding: const EdgeInsets.all(20.0),
+      child: Container(
+        width: 1440,
+        child: Row(
+          children: [
+            Column(
+              children: [
+                Container(
+                  child: Text('hello'),
+                )
+              ],
+            ),
+            const SizedBox(width: 10,),
+            Column(
+              children: [
+                Container(
+                  child: Text('hello'),
+                )
+              ],
+            ),
+            const SizedBox(
+              width: 10,
+            ),
+            Column(
+              children: [
+                Container(
+                  child: Text('hello'),
+                )
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
